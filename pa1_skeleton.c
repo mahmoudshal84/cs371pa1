@@ -18,9 +18,7 @@
 
 /* 
 Please specify the group members here
-# Student #1: 
-# Student #2:
-# Student #3: 
+# Student #1: Mahmoud Shalash
 */
 
 #include <stdio.h>
@@ -117,7 +115,7 @@ void *client_thread_func(void *arg) {
         
         if (i == 0 || i == 100 || i == 1000 || i == 10000 || i == 100000 || i == num_requests-1) {
             printf("Thread #%d: %d msgs, last RTT: %lld us\n", 
-                   data->socket_fd % 100, i+1, rtt); // hacky thread ID
+                   data->socket_fd % 100, i+1, rtt);
         }
     }
     
